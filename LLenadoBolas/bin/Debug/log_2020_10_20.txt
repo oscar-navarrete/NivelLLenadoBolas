@@ -1,0 +1,50 @@
+20-10-2020 12:44:52 -  Conexión Exitosa a Servidor AF TEPIAF
+20-10-2020 12:45:10 - ---Inicio Proceso---
+20-10-2020 12:45:44 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 12:45:51 - Molino: ML2 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 12:45:51 - ---Fin Proceso---
+20-10-2020 13:42:10 -  Conexión Exitosa a Servidor AF TEPIAF
+20-10-2020 13:42:10 - ---Inicio Proceso---
+20-10-2020 13:42:15 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 13:42:16 - Molino: ML2 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 13:42:16 - ---Fin Proceso---
+20-10-2020 13:52:09 -  Conexión Exitosa a Servidor AF TEPIAF
+20-10-2020 13:52:09 - ---Inicio Proceso---
+20-10-2020 13:52:10 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 13:52:11 - Molino: ML2 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 13:52:11 - ---Fin Proceso---
+20-10-2020 14:02:09 -  Conexión Exitosa a Servidor AF TEPIAF
+20-10-2020 14:02:09 - ---Inicio Proceso---
+20-10-2020 14:02:10 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:02:10 - Molino: ML2 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:02:10 - ---Fin Proceso---
+20-10-2020 14:12:09 -  Conexión Exitosa a Servidor AF TEPIAF
+20-10-2020 14:12:09 - ---Inicio Proceso---
+20-10-2020 14:12:10 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:12:11 - Molino: ML2 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:12:11 - ---Fin Proceso---
+20-10-2020 14:22:09 -  Conexión Exitosa a Servidor AF TEPIAF
+20-10-2020 14:22:09 - ---Inicio Proceso---
+20-10-2020 14:22:10 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:22:11 - Molino: ML2 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:22:11 - ---Fin Proceso---
+20-10-2020 14:32:10 -  Conexión Exitosa a Servidor AF TEPIAF
+20-10-2020 14:32:10 - ---Inicio Proceso---
+20-10-2020 14:32:12 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:32:13 - Molino: ML2 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:32:13 - ---Fin Proceso---
+20-10-2020 14:42:09 -  Conexión Exitosa a Servidor AF TEPIAF
+20-10-2020 14:42:09 - ---Inicio Proceso---
+20-10-2020 14:42:11 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:42:12 - Molino: ML2 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:42:12 - ---Fin Proceso---
+20-10-2020 14:52:10 -  Conexión Exitosa a Servidor AF TEPIAF
+20-10-2020 14:52:10 - ---Inicio Proceso---
+20-10-2020 14:52:12 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:52:13 - Molino: ML2 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 14:52:13 - ---Fin Proceso---
+20-10-2020 15:02:09 -  Conexión Exitosa a Servidor AF TEPIAF
+20-10-2020 15:02:09 - ---Inicio Proceso---
+20-10-2020 15:02:11 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 15:02:12 - Molino: ML2 Mill_Speed: 76,7464149174886 Balls_Filling: 33,6389084927505
+20-10-2020 15:02:12 - ---Fin Proceso---

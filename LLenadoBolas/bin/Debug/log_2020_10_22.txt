@@ -1,0 +1,40 @@
+22-10-2020 12:36:23 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 12:36:33 - ---Inicio Proceso---
+22-10-2020 12:45:54 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 12:45:54 - ---Inicio Proceso---
+22-10-2020 13:39:23 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 13:39:23 - ---Inicio Proceso---
+22-10-2020 14:04:52 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 14:05:00 - ---Inicio Proceso---
+22-10-2020 14:09:00 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 14:09:00 - ---Inicio Proceso---
+22-10-2020 16:03:45 -  Error de conexión a PI pi_server_colon MsgError:Cannot connect to the PI Data Archive. 
+22-10-2020 16:04:10 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 16:04:19 - ---Inicio Proceso---
+22-10-2020 16:15:50 -  Error de conexión a PI pi_server_colon MsgError:Cannot connect to the PI Data Archive. 
+22-10-2020 16:15:51 -  Servidor AF no existe o Revisar Credenciales en Archivo .ini MsgError:O el nombre de destino no es correcto o el servidor ha rechazado las credenciales del cliente.
+22-10-2020 16:15:51 - Fin de Ciclo
+22-10-2020 16:17:17 -  Error de conexión a PI pi_server_colon MsgError:Cannot connect to the PI Data Archive. 
+22-10-2020 16:20:12 -  Error de conexión a PI pi_server_colon MsgError:Cannot connect to the PI Data Archive. 
+22-10-2020 16:20:13 -  Servidor AF no existe o Revisar Credenciales en Archivo .ini MsgError:O el nombre de destino no es correcto o el servidor ha rechazado las credenciales del cliente.
+22-10-2020 16:20:13 - Fin de Ciclo
+22-10-2020 16:21:36 -  Error de conexión a PI pi_server_colon MsgError:Cannot connect to the PI Data Archive. 
+22-10-2020 16:24:28 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 16:24:39 - ---Inicio Proceso---
+22-10-2020 16:28:03 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 16:28:15 - ---Inicio Proceso---
+22-10-2020 16:38:07 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 16:38:07 - ---Inicio Proceso---
+22-10-2020 16:40:53 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 91,2370924557625
+22-10-2020 16:47:40 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 16:47:40 - ---Inicio Proceso---
+22-10-2020 16:48:39 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 16:48:39 - ---Inicio Proceso---
+22-10-2020 16:49:55 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 16:49:55 - ---Inicio Proceso---
+22-10-2020 16:52:20 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 16:52:31 - ---Inicio Proceso---
+22-10-2020 16:58:55 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 16:58:55 - ---Inicio Proceso---
+22-10-2020 16:59:44 -  Conexión Exitosa a Servidor AF TEPIAF
+22-10-2020 16:59:44 - ---Inicio Proceso---

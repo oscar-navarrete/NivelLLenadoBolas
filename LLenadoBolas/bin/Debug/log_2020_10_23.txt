@@ -1,0 +1,11 @@
+23-10-2020 18:58:14 -  Error de conexión a PI pi_server_colon MsgError:Could not establish a connection to PI Network Manager
+23-10-2020 18:58:19 -  Conexión Exitosa a Servidor AF TEPIAF
+23-10-2020 18:58:19 - ---Inicio Proceso---
+23-10-2020 23:28:56 -  Conexión Exitosa a Servidor PI pi_server_colon
+23-10-2020 23:29:18 -  Conexión Exitosa a Servidor AF TEPIAF
+23-10-2020 23:29:30 - ---Inicio Proceso---
+23-10-2020 23:30:50 - Molino: ML1 Mill_Speed: 76,7464149174886 Balls_Filling: 4,04973896433824E-153
+23-10-2020 23:39:18 -  Conexión Exitosa a Servidor AF TEPIAF
+23-10-2020 23:39:25 - ---Inicio Proceso---
+23-10-2020 23:41:14 -  Conexión Exitosa a Servidor AF TEPIAF
+23-10-2020 23:41:14 - ---Inicio Proceso---

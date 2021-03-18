@@ -5,6 +5,7 @@ C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\bin\Debug\Microsoft.Sol
 C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\bin\Debug\OSIsoft.AFSDK.dll
 C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\bin\Debug\Microsoft.Solver.Foundation.xml
 C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\bin\Debug\OSIsoft.AFSDK.xml
+C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\obj\Debug\LLenadoBolas.csprojAssemblyReference.cache
 C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\obj\Debug\LLenadoBolas.NivelLLenadoBolas.resources
 C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\obj\Debug\LLenadoBolas.ProjectInstaller.resources
 C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\obj\Debug\LLenadoBolas.csproj.GenerateResource.cache
@@ -12,4 +13,3 @@ C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\obj\Debug\LLenadoBolas.
 C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\obj\Debug\LLenadoBolas.csproj.CopyComplete
 C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\obj\Debug\LLenadoBolas.exe
 C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\obj\Debug\LLenadoBolas.pdb
-C:\Users\onava002\source\repos\LLenadoBolas\LLenadoBolas\obj\Debug\LLenadoBolas.csprojAssemblyReference.cache

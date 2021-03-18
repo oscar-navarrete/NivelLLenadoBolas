@@ -98,8 +98,8 @@ namespace LLenadoBolas
                 AFConnectionStatusError =  " Servidor AF no existe o Revisar Credenciales en Archivo .ini" + " MsgError:" + ex.Message;
                 oLog.Add(AFConnectionStatusError);
                 oLog.Add("Fin de Ciclo");
-                AFSrv.Disconnect();
-                AFSrv.Dispose();
+                //AFSrv.Disconnect();
+                //AFSrv.Dispose();
                 //Environment.Exit(0);
             }
 
@@ -135,31 +135,31 @@ namespace LLenadoBolas
                             double slurry_density = element.Attributes["Slurry_Density"].GetValue().ValueAsDouble();
                             double solidos = element.Attributes["Solidos_Molinos"].GetValue().ValueAsDouble();
 
-                            //Código de Prueba
-                            //mill_speed = element.Attributes["Mill_Speed"].GetValue().ValueAsDouble();
-
                             mill_speed = Solver(velocidad, diametro);
                             element.Attributes["Mill_Speed"].SetValue(new AFValue(mill_speed));
 
                             double potencia_prom = element.Attributes["Potencia_Prom"].GetValue().ValueAsDouble();
-                            balls_filling = Solver_Potencia(Math.Round(potencia_prom, 0), diametro, largo, Math.Round(mill_speed, 0), densidad_bolas, Math.Round(solidos, 2), ore_density, angulo, losses, intersticios);
 
-                            element.Attributes["Balls_Filling"].SetValue(new AFValue(balls_filling));
+                            if (potencia_prom != 0)
+                            {
+                                balls_filling = Solver_Potencia(Math.Round(potencia_prom, 3), diametro, largo, Math.Round(mill_speed, 3), densidad_bolas, solidos, ore_density, angulo, losses, intersticios, Math.Round(slurry_density, 3));
+                                element.Attributes["Balls_Filling"].SetValue(new AFValue(balls_filling));
+                                oLog.Add("Molino: " + element.Name + " Mill_Speed: " + mill_speed + " Balls_Filling: " + balls_filling);
+                                //balls_filling = Solver_Potencia(potencia_prom, diametro, largo, Math.Round(mill_speed, 2), densidad_bolas, Math.Round(solidos, 2), ore_density, angulo, losses, intersticios);
+                            }
 
-                            oLog.Add("Molino: " + element.Name + " Mill_Speed: " + mill_speed + " Balls_Filling: " + balls_filling);
+                            //oLog.Add("Molino: " + element.Name + " Mill_Speed: " + mill_speed + " Balls_Filling: " + balls_filling);
 
                         }
 
                     }
 
                     oLog.Add("---Fin Proceso---");
-                    AFSrv.Disconnect();
-                    AFSrv.Dispose();
+                    //AFSrv.Disconnect();
+                    //AFSrv.Dispose();
 
                 }
-
-
-               
+  
             }
         }
 
@@ -183,36 +183,30 @@ namespace LLenadoBolas
             
         }
 
-        public static double Solver_Potencia(double potencia, double diametro, double largo, double millSpeed, double densidad_bolas, double solidos, double densidad_mineral, double angulo, double losses, double inter)
+        public static double Solver_Potencia(double potencia, double diametro, double largo, double millSpeed, double densidad_bolas, double solidos, double densidad_mineral, double angulo, double losses, double inter, double slurry_density)
         {
        
-            SolverContext context1 = SolverContext.GetContext();
+            var context1 = SolverContext.GetContext();
             context1.ClearModel();
-            Model model1 = context1.CreateModel();
+            var model1 = context1.CreateModel();
 
-            Decision y = new Decision(Domain.RealNonnegative, "Balls_Filling");
-            
+            Decision y = new Decision(Domain.RealNonnegative, "Balls_Fil");
+
             model1.AddDecisions(y);
 
-            model1.AddConstraints("one", potencia == (0.238 * Math.Pow(diametro, 3.5) * (largo / (double)diametro) * (millSpeed / (double)100) * ((((1 - 0.4) * densidad_bolas * (y / (double)100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / (double)4) + ((1 / (double)((solidos / (double)100) / densidad_mineral + (1 - solidos / (double)100))) * (y / (double)100 - y / (double)100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / (double)4) + ((1 / (double)((solidos / (double)100) / densidad_mineral + (1 - solidos / (double)100))) * (inter / (double)100) * 0.4 * (y / (double)100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / (double)4)) / ((y / (double)100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / (double)4)) * (y / (double)100 - 1.065 * y * y / (double)10000) * Math.Sin(angulo * Math.PI / 180)) / (1 - losses / (double)100));
+            model1.AddConstraints("noNegativo", y >= 0, y < 46);
+            model1.AddConstraints("one", potencia == ((0.238 * Math.Pow(diametro, 3.5) *(largo / (double)diametro) *(millSpeed / (double)100) *(((((1 - 0.4) * densidad_bolas * (y / (double)100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / (double)4))+(slurry_density * 0 * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / (double)4)+(slurry_density * (inter / (double)100) * 0.4 * (y / (double)100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / (double)4))/((y / (double)100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / (double)4)) *(y / (double)100 - 1.065 * y * y / (double)10000) * Math.Sin(angulo * Math.PI / 180)) / (1 - losses / (double)100)));
 
-            SimplexDirective simplex = new SimplexDirective();
-        
+            //model1.AddConstraints("one", potencia == ((0.238 * Math.Pow(diametro, 3.5) * (largo / diametro) * (millSpeed / 100) *(((((1 - 0.4) * densidad_bolas * (y / 100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / 4))+((1 / ((solidos / 100) / densidad_mineral + (1 - solidos / 100))) * (y / 100 - y / 100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / 4)+((1 / ((solidos / 100) / densidad_mineral + (1 - solidos / 100))) * (inter / 100) * 0.4 * (y / 100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / 4))/((y / 100) * Math.PI * Math.Pow((diametro * 0.305), 2) * (largo * 0.305) / 4)) *(y / 100 - 1.065 * y * y / 10000) * Math.Sin(angulo * Math.PI / 180)) / (1 - losses / 100)));
+
             Directive n = new Directive();
             n.TimeLimit = 300000;
             n.WaitLimit = 420000;
-            //simplex.IterationLimit = 100;
 
-            // Solve the problem
             Solution sol = context1.Solve(n);
             
-            ///Report report = sol.GetReport();
-            
-            return y.GetDouble();
-
+            //var report = sol.GetReport();
+            return y.GetDouble(); 
         }
-
-       
-
     }
 }
